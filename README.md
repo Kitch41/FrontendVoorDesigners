@@ -15,6 +15,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Bronnenlijst
   1. https://www.fontinlogo.com/logo/dominos-pizza
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
 
 
 
@@ -25,8 +26,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je storyboard:
-  <img src="readme-images/Storyboard-dominoslogo" width="500px" alt="storyboard voor opdracht 1">
-  ![Storyboard-dominoslogo](https://user-images.githubusercontent.com/91873549/223687729-80a832b2-3aa0-4d50-840b-743ef02d56fd.jpg)
+  <img src="readme-images/Storyboard-dominoslogo.jpg" width="500px" alt="storyboard voor opdracht 1">
 
 
   ### Je ambitie: 
@@ -45,19 +45,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Dominos-final.png" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Het goed werken met keyframes en animaties is best wel goed gelukt, ook ben ik wat beter geworden in het goed commenten bij mijn css zodat het wat overzichtelijker wordt.
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img src="readme-images/Dominos-middle.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Realistisch laten vallen van de domino steentjes
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/dominos-start.png" width="375px" alt="bummer">
 </details>
 
 
