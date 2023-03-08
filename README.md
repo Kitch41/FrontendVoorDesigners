@@ -26,6 +26,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je storyboard:
   <img src="readme-images/Storyboard-dominoslogo" width="500px" alt="storyboard voor opdracht 1">
+  ![Storyboard-dominoslogo](https://user-images.githubusercontent.com/91873549/223687729-80a832b2-3aa0-4d50-840b-743ef02d56fd.jpg)
 
 
   ### Je ambitie: 
