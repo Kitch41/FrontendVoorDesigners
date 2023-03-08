@@ -1,3 +1,11 @@
+
+:root {
+
+    --clr-mainblue: #0277ad;
+    --clr-mainred: #e31a37;
+
+}
+
 body {
     height: 100dvh;
     display: flex;
@@ -9,61 +17,377 @@ h1 {
     font-size: 3em;
     font-family: "Futura";
     text-transform: uppercase;
-    color: #0277ad;
+    color: var(--clr-mainblue);
 }
 
-h1:hover {
-    
+
+/* Keyframes */
+
+@keyframes pizzarol {
+    0% {
+        left: -8em;
+        visibility: visible;
+        transform: rotate(0);
+    }
+
+    100% {
+        left: 2em;
+        visibility: hidden;
+        transform: rotate(2.5turn);
+    }
+
+
 }
+
+@keyframes pizzafade {
+    0% {
+        left: -7.5em;
+        visibility: visible;
+    }
+    95% {
+        visibility: visible;
+    }
+
+    100% {
+        left: 2.5em;
+        visibility: hidden;
+    }
+
+
+}
+
+@keyframes domino2 {
+    0% { 
+        visibility: visible;
+        transform: rotate(0deg);
+        left: -2.9em;
+    }
+
+    95% {
+        visibility: visible;
+    }
+
+    100% {
+        transform: rotate(45deg);
+        visibility: hidden;
+        left: -2.3em;
+    }
+
+
+}
+
+@keyframes domino1 {
+    0% { 
+        visibility: visible;
+        transform: rotate(0deg);
+        left: -4.4em;
+    }
+
+    95% {
+        visibility: visible;
+    }
+
+    100% {
+        transform: rotate(45deg);
+        visibility: hidden;
+        left: -4.1em;
+    }
+
+}
+
+@keyframes dominoturn {
+    0% { 
+        visibility: visible;
+        transform: rotate(0deg);
+        left: -1.2em;
+    }
+
+    95% {
+        visibility: visible;
+    }
+
+    100% {
+        transform: rotate(45deg);
+        visibility: visible;
+        left: -1em;
+    }
+
+
+
+}
+
+@keyframes commajump {
+    0% { 
+        top: -0.38em;
+    }
+
+    50% {
+        top: -0.5em;
+    }
+
+    100% {
+        top: -0.38em;
+    }
+
+}
+
+@keyframes i-jump {
+    0% { 
+        top: -0.12em;
+    }
+
+    50% {
+        top: -0.24em;
+    }
+
+    100% {
+        top: -0.12em;
+    }
+
+}
+
+@keyframes tmvisible {
+    0% { opacity: 0;}
+    100% {opacity: 100%;}
+
+}
+
 
 h1 span:nth-of-type(1) {
  position: relative;  
 }
 
-h1 span:nth-of-type(1):before {
+/* main (right) domino */
+
+h1 span:nth-of-type(1):after {
    content: "";
    position: absolute;
-   width: 1em;
-   height: 1em;
-   background-image: linear-gradient(
-    red 49%,
-    white 49% 51%,
-    blue 51% 
-    );
+   height: 1.2em;
+   width: 0.6em;
+
+   background-image:
+		radial-gradient(
+			white 50%,
+			transparent 50%
+		),
+		radial-gradient(
+			white 50%,
+			transparent 50%
+		),
+		radial-gradient(
+			white 50%,
+			transparent 50%
+		),
+		linear-gradient(
+			var(--clr-mainred) 48%,
+			white 48% 52%,
+			var(--clr-mainblue) 52%
+		);
+
+    background-position:
+		0.15em 0.15em,
+		0.27em 0.65em,
+		0.03em 0.87em,
+		left top;
+
+        background-size:
+		0.3em 0.3em,
+		0.3em 0.3em,
+		0.3em 0.3em,
+		cover;
+
+    background-repeat: no-repeat;
+    border-radius: 	5%;
+    left: -1.2em;
+    top: -0.2em;
+
+    animation: dominoturn 2s forwards 3s;
 }
 
+/* trademark */
+
+h1 span:nth-of-type(1)::before {
+    content: "TM";
+    position: absolute;
+    opacity: 0%;
+    font-size: 0.01em;
+    left: -70em;
+    top: 85em;
+    animation: tmvisible 2s forwards 4s;
+}
 
 
 h1 span:nth-of-type(2) {
-   
+    position: relative;  
+}
+
+
+/* middle domino */
+
+h1 span:nth-of-type(2):before {
+    content: "";
+    position: absolute;
+    width: 0.1em;
+    height: 1.2em;
+    background-image: linear-gradient(
+        var(--clr-mainred) 48%,
+        white 48% 52%,
+        var(--clr-mainblue) 52% 
+    );
+ 
+     border-radius: 	10%;
+     left: -2.9em;
+     top:-0.2em;
+     transform: rotate(0deg);
+     animation: domino2 2s forwards 2s;
 }
 
 h1 span:nth-of-type(3) {
+    position: relative;
+}
 
+/* left domino */
+
+h1 span:nth-of-type(3):before {
+    content: "";
+    position: absolute;
+    width: 0.1em;
+    height: 1.2em;
+    background-image: linear-gradient(
+     var(--clr-mainred) 48%,
+     white 48% 52%,
+     var(--clr-mainblue) 52% 
+     );
+ 
+     border-radius: 	10%;
+     left: -4.4em;
+     top: -0.2em;
+
+     animation: domino1 2s forwards 1s;
 }
 
 h1 span:nth-of-type(4) {
-    
+    position: relative;
 }
 
-h1 span:nth-of-type(5) {
-   
+/* dot on the i */
+
+h1 span:nth-of-type(4)::before {
+    content: "";
+    width: 0.32em;
+    height: 0.32em;
+    position: absolute;
+
+    background-color: var(--clr-mainblue);
+    border-radius: 100%;
+    top: -0.12em;
+    left: 0.037em;
+
+    animation: i-jump 1s forwards 5s;
 }
+
+
+h1 span:nth-of-type(5) {
+   position: relative;
+}
+
 
 h1 span:nth-of-type(6) {
     position: relative;
 }
 
+
+
+/* pizza */
+
 h1 span:nth-of-type(6):before {
     content: "";
+    visibility: visible;
     position: absolute;
-    background-color: #ffeb3b;
-    border: 0.1em solid orange;
-    height: 1.1em;
-    width: 1.1em;
-    border-radius: 100%;
+    background-image: 
+    radial-gradient(
+        red 48%,
+        darkred 48% 56%,
+        transparent 56%
+    ),
+    radial-gradient(
+        red 48%,
+        darkred 48% 56%,
+        transparent 56%
+    ),
+    radial-gradient(
+        red 48%,
+        darkred 48% 56%,
+        transparent 56%
+    ),
+    radial-gradient(
+        red 48%,
+        darkred 48% 56%,
+        transparent 56%
+    ),
+    radial-gradient(
+        red 48%,
+        darkred 48% 56%,
+        transparent 56%
+    ),
+    radial-gradient(
+        red 48%,
+        darkred 48% 56%,
+        transparent 56%
+    ),
+    radial-gradient(
+        yellow 50%,
+        orange 50% 60%,
+        transparent 60%
+    );
+
+
+
+    background-position:
+		0.5em 1.1em,
+		1.1em 0.4em,
+		0.4em 0.4em,
+        1em 1.2em,
+        1.2em 0.8em,
+        0.7em 0.7em,
+        -0.1em -0.1em;
+
+        background-size:
+		0.3em 0.3em,
+		0.3em 0.3em,
+		0.3em 0.3em,
+        0.3em 0.3em,    
+        0.3em 0.3em,
+		0.3em 0.3em,
+        2em 2em;
+
+
+        background-repeat: no-repeat;
+    height: 1.8em;
+    width: 1.8em;
     left: -8em;
-    top: -0.3em;
+    top: -0.5em;
+    z-index: 2;
+    animation: pizzarol 4s forwards;
+
+}
+
+
+
+/* fading layer  */
+
+h1 span:nth-of-type(6):after {
+    content: "";
+    visibility: visible;
+    position: absolute;
+    background-color: white;
+    width: 10em;
+    height: 2em;
+    top: -0.9em;
+    left: -6em;
+    z-index: 1;
+    animation: pizzafade 4s forwards;
+
 }
 
 
@@ -72,13 +396,21 @@ h1 span:nth-of-type(7) {
     left: 0.2em;
 }
 
+
+/* comma */
+
 h1 span:nth-of-type(7):before {
     content: "'";
     position: absolute;
     left: -0.35em;
-    top: -0.1em;
+    top: -0.38em;
+
+    animation: commajump 1s forwards 5s;
 
 }
+
+
+/* font */
 
 @font-face {
     font-family: Futura;
