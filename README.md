@@ -14,16 +14,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1-
-  2. -bron 2-
-  3. -...-
+  1. https://www.fontinlogo.com/logo/dominos-pizza
 
 
 
 ## Opdracht 1 plan
 
 <details open>
-  <summary>uitwerken na schetsen idee (voor week 2)</summary>
+  <summary>Mijn plan voor opdracht 1 is het maken van een animatie met het domino's logo. zo wil ik een paar domino steentjes laten vallen om het logo op de goede plek te krijgen en ook wil ik een rollende pizza in het scherm hebben om dominos naar voren te laten komen.</summary>
 
 
   ### Je storyboard:
@@ -32,10 +30,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Werken met keyframes
+  - werken met :root
  
 </details>
 
@@ -44,7 +40,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Opdracht 1 reflectie
 
 <details>
-  <summary>uitwerken bij afronden opdracht (voor week 4)</summary>
+  <summary>Ik ben blij met de animatie die ik heb gecreeerd alleen zou ik nog een paar dingentjes aanpassen, zoals de dominosteentjes die vallen. deze zou ik wat meer realistisch willen laten vallen zodat het er daadwerkelijk uitziet alsof ze vallen en niet gewoon draaien.</summary>
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
@@ -52,13 +48,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Het goed werken met keyframes en animaties is best wel goed gelukt, ook ben ik wat beter geworden in het goed commenten bij mijn css zodat het wat overzichtelijker wordt.
 
   <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Realistisch laten vallen van de domino steentjes
 
   <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
 </details>
