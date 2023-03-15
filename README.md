@@ -1,7 +1,7 @@
 # Procesverslag
 **Auteur:** Stef Keuken
 
-**De opdrachten:** [opdracht 1](Animatie/index.html) en [opdracht 2](opdracht2/index.html)
+**De opdrachten:** [opdracht 1](opdracht1/index.html) en [opdracht 2](opdracht2/index.html)
 
 
 Markdown is een simpele manier om HTML te schrijven.  
