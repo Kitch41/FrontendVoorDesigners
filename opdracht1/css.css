@@ -6,10 +6,15 @@
 
 }
 
+html {
+    font-size: clamp(.5em, 3vmin, 5em);
+}
+
 body {
     height: 100dvh;
     display: flex;
     justify-content: center;
+   
 }
 
 h1 {
@@ -204,6 +209,8 @@ h1 span:nth-of-type(1):after {
     animation: dominoturn 2s forwards 3s;
 }
 
+
+
 /* trademark */
 
 h1 span:nth-of-type(1)::before {
@@ -220,6 +227,8 @@ h1 span:nth-of-type(1)::before {
 h1 span:nth-of-type(2) {
     position: relative;  
 }
+
+
 
 
 /* middle domino */
@@ -246,6 +255,8 @@ h1 span:nth-of-type(3) {
     position: relative;
 }
 
+
+
 /* left domino */
 
 h1 span:nth-of-type(3):before {
@@ -269,6 +280,8 @@ h1 span:nth-of-type(3):before {
 h1 span:nth-of-type(4) {
     position: relative;
 }
+
+
 
 /* dot on the i */
 

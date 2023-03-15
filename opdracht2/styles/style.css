@@ -16,11 +16,10 @@
 
 
 
-/**************/
-/* CSS REMEDY */
-/**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
 
 button:not[disabled], summary {
@@ -35,23 +34,42 @@ button:not[disabled], summary {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--clr-background: #171819;
+	--clr-headers: #d6d6f1;
+	--clr-primaryfont: #4298b0;
 }
 
 
 
 
-
-/****************/
-/* JOUW STYLING */
-/****************/
 body {
   font-family:eenfont, sans-serif;
   color:var(--color-text);
-  background-color:var(--color-background);
+  background-color:var(--clr-background);
 }
 
-/* jouw code */
+
+
+/* navbar */
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/* border: 1em solid var(--clr-background); */
+	height: 10vh;
+	align-items: center;
+}
+
+nav h1 {
+	color: var(--clr-primaryfont);
+}
+
+nav input {
+	background-color: var(--clr-headers);
+	border: none;
+	padding: 0.25em;
+	width: 25%;
+	border-radius: 0.5em;
+}
 
