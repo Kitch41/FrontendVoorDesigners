@@ -35,6 +35,7 @@ button:not[disabled], summary {
 /*********************/
 :root {
 	--clr-background: #171819;
+	--clr-backgroundlight: rgba(23, 24, 25, .8);
 	--clr-headers: #d6d6f1;
 	--clr-primaryfont: #4298b0;
 }
@@ -45,7 +46,9 @@ button:not[disabled], summary {
 body {
   font-family:eenfont, sans-serif;
   color:var(--color-text);
-  background-color:var(--clr-background);
+  background-image: url(../Images/background_hexagon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -57,8 +60,10 @@ nav {
 	flex-direction: row;
 	justify-content: space-between;
 	/* border: 1em solid var(--clr-background); */
-	height: 10vh;
+	height: 12vh;
 	align-items: center;
+	background-color: var(--clr-backgroundlight);
+	padding: 1.5em;
 }
 
 nav h1 {
@@ -66,10 +71,15 @@ nav h1 {
 }
 
 nav input {
-	background-color: var(--clr-headers);
+	background-color: transparent;
 	border: none;
+	border-top: none;
+	border-bottom: 0.1em solid var(--clr-headers);
 	padding: 0.25em;
 	width: 25%;
-	border-radius: 0.5em;
+	color: var(--clr-headers);
 }
 
+h1 {
+	color: white;
+}
